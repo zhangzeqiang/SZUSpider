@@ -1,0 +1,6 @@
+错误一:Resource id #6
+所获数据不是数组，使用下面语句可解决
+$result = $db->query($sql);
+$row=mysql_fetch_array($result);
+
+foreach($result as $row){$row['id'] ... }只适合数组
